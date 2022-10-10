@@ -16,6 +16,6 @@ spec:
         spec:
             containers:
                 - name: frontend
-                  image: waongo/udagram-frontend:v2
+                  image: waongo/udagram-frontend:v3
                   ports:
                       - containerPort: 80
