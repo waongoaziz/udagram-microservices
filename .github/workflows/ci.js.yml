@@ -19,9 +19,9 @@ jobs:
             - run: docker tag reverseproxy waongo/reverseproxy:v1
             - run: docker tag udagram-api-user waongo/udagram-api-user:v1
             - run: docker tag udagram-api-feed waongo/udagram-api-feed:v1
-            - run: docker tag udagram-frontend:local waongo/udagram-frontend:v1
+            - run: docker tag udagram-frontend:local waongo/udagram-frontend:v2
             - run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
             - run: docker push waongo/reverseproxy:v1
             - run: docker push waongo/udagram-api-user:v1
             - run: docker push waongo/udagram-api-feed:v1
-            - run: docker push waongo/udagram-frontend:v1
+            - run: docker push waongo/udagram-frontend:v2
